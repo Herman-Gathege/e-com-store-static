@@ -1,0 +1,94 @@
+.searchContainer {
+  border-radius: 20px;
+  background: var(--bg-color, #eae4f2);
+  display: flex;
+  max-width: 730px;
+  flex-direction: column;
+  color: rgba(76, 45, 78, 1);
+  white-space: nowrap;
+  justify-content: center;
+  padding: 10px;
+  font: 400 16px Source Sans 3, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.searchWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px 283px;
+  justify-content: center;
+}
+
+.searchInputContainer {
+  border-radius: 20px;
+  display: flex;
+  min-width: 240px;
+  min-height: 44px;
+  width: 100%;
+  align-items: center;
+  gap: 40px 249px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 5px 8px;
+  border: 1px solid rgba(76, 45, 78, 1);
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.searchTextContainer {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 9px;
+  justify-content: end;
+  flex-grow: 1;
+  width: 336px;
+  margin: auto 0;
+  padding: 0 20px;
+}
+
+.divider {
+  background-color: #232323;
+  align-self: stretch;
+  width: 0px;
+  height: 34px;
+  margin: auto 0;
+  border: 1px solid rgba(35, 35, 35, 1);
+}
+
+.searchText {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .searchContainer,
+  .searchWrapper,
+  .searchInputContainer,
+  .searchTextContainer {
+    white-space: initial;
+    max-width: 100%;
+  }
+}

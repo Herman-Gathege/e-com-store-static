@@ -1,0 +1,63 @@
+.cartItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px 110px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.productInfo {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.productImage {
+  aspect-ratio: 1.25;
+  object-fit: contain;
+  object-position: center;
+  width: 132px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.priceContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.price {
+  align-self: stretch;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.removeButton {
+  align-self: start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .removeButton {
+    white-space: initial;
+  }
+}

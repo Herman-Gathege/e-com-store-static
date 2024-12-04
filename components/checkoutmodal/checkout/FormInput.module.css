@@ -1,0 +1,32 @@
+.inputContainer {
+  display: flex;
+  min-width: 240px;
+  width: 523px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.inputLabel {
+  align-self: stretch;
+  width: 123px;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.inputField {
+  border-radius: 4px;
+  border: 1px solid var(--texts, #232323);
+  background-color: #f4f4f4;
+  display: flex;
+  min-height: 44px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .inputContainer {
+    max-width: 100%;
+  }
+  .inputField {
+    max-width: 100%;
+  }
+}

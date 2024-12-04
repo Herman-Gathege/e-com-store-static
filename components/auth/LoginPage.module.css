@@ -1,0 +1,91 @@
+.loginContainer {
+  background: var(--prim-color, #f9f9f9);
+  max-width: 602px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+  padding: 48px 40px 130px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  align-items: center;
+  gap: 40px 100px;
+  color: var(--texts, #232323);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.title {
+  font: 700 32px Playfair, sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 26px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--texts, #232323);
+}
+
+.storeLink {
+  text-decoration: underline;
+  padding: 10px;
+  color: inherit;
+}
+
+.forgotLink {
+  padding: 10px;
+  margin-top: 12px;
+  color: inherit;
+}
+
+.signupSection {
+  display: flex;
+  margin-top: 32px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.signupText {
+  width: 123px;
+  padding: 10px;
+  font-size: 14px;
+  color: #1a0f0e;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .loginContainer {
+    padding: 0 20px 100px;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}

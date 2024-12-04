@@ -1,0 +1,121 @@
+.cartContainer {
+  background: var(--prim-color, #f9f9f9);
+  display: flex;
+  max-width: 602px;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--texts, #232323);
+  padding: 48px 45px 126px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  align-items: center;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font: 700 32px Playfair, sans-serif;
+}
+
+.cartIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 26px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.cartItems {
+  display: flex;
+  margin-top: 26px;
+  width: 100%;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  gap: 24px;
+}
+
+.divider {
+  background-color: #232323;
+  min-height: 1px;
+  margin-top: 48px;
+  width: 100%;
+  border: 1px solid rgba(35, 35, 35, 1);
+}
+
+.promoSection {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 522px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font: 400 14px Lato, sans-serif;
+}
+
+.promoCode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(100, 100, 100, 1);
+  justify-content: center;
+  padding: 10px;
+}
+
+.promoIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+}
+
+.subtotal {
+  align-self: stretch;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  font: 500 32px Playfair, sans-serif;
+}
+
+.subtotalAmount {
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+}
+
+.checkoutInfo {
+  align-self: stretch;
+  gap: 10px;
+  padding: 10px;
+}
+
+.checkoutButton {
+  align-self: stretch;
+  background: var(--sec-color, #f8c4d0);
+  margin-top: 24px;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+  font: 600 20px Lato, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .cartContainer {
+    padding: 0 20px 100px;
+  }
+
+  .header,
+  .cartItems,
+  .promoSection,
+  .checkoutButton {
+    max-width: 100%;
+  }
+
+  .divider {
+    margin-top: 40px;
+  }
+}
