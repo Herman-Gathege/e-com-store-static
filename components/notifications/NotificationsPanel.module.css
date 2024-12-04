@@ -1,0 +1,87 @@
+.panel {
+  border-radius: 16px;
+  background: var(--White, #fff);
+  width: 462px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin: 18px 181px 0 0;
+  padding: 16px;
+  align-self: end;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  gap: 40px 100px;
+  color: var(--Dark-Gray, #232321);
+  justify-content: space-between;
+  font: 20px Rubik, sans-serif;
+}
+
+.headerIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 24px;
+}
+
+.notificationList {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  flex-direction: column;
+  font-family: Open Sans, sans-serif;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  align-items: start;
+  gap: 40px 70px;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  justify-content: space-between;
+  font: 500 14px Inter, sans-serif;
+}
+
+.markReadBtn {
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  width: 158px;
+}
+
+.markReadIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 16px;
+}
+
+.viewAllBtn {
+  border-radius: 8px;
+  background: var(--Blue, #003f62);
+  color: var(--Pure-White, #fff);
+  min-height: 32px;
+  padding: 8px 16px;
+  width: 200px;
+}
+
+@media (max-width: 991px) {
+  .panel {
+    margin-right: 10px;
+  }
+
+  .header {
+    max-width: 100%;
+    white-space: initial;
+  }
+}

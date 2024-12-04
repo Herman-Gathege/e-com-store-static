@@ -1,0 +1,93 @@
+.header {
+  background-color: rgba(250, 250, 250, 1);
+  border-color: rgba(35, 35, 33, 0.2);
+  border-bottom-width: 1px;
+  align-self: stretch;
+  display: flex;
+  min-height: 96px;
+  width: 100%;
+  align-items: center;
+  gap: 40px 195px;
+  color: rgba(28, 28, 26, 1);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  justify-content: end;
+  padding: 28px 60px;
+  font: 500 14px Rubik, sans-serif;
+}
+
+.controls {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  width: 301px;
+  align-items: center;
+  gap: 40px;
+  justify-content: end;
+  margin: auto 0;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.notificationIcon {
+  width: 28px;
+}
+
+.searchIcon {
+  width: 24px;
+}
+
+.adminButton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 98px;
+  margin: auto 0;
+}
+
+.adminButtonInner {
+  border-radius: 8px;
+  display: flex;
+  min-height: 40px;
+  width: 100%;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  padding: 12px 16px;
+  border: 1px solid rgba(28, 28, 26, 1);
+}
+
+.adminText {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.adminIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 16px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    white-space: initial;
+    padding: 0 20px;
+  }
+
+  .controls,
+  .adminButtonInner {
+    white-space: initial;
+  }
+}

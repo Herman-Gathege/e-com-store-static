@@ -1,0 +1,60 @@
+.searchBoxDropDown {
+  border-radius: 8px;
+  border: 1px solid var(--Gray, #e7e7e3);
+  background: var(--White, #fff);
+  padding: 20px;
+  margin: 18px 262px 0 0;
+  font: 600 16px Open Sans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  z-index: 10;
+  align-self: end;
+}
+
+@media (max-width: 991px) {
+  .searchBoxDropDown {
+    margin-right: 10px;
+  }
+}
+
+.heading {
+  color: var(--Dark-Gray, #232321);
+  font: 20px Rubik, sans-serif;
+  margin: 0;
+}
+
+.productItem {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  gap: 10px;
+}
+
+.productImage {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+}
+
+.productTitle {
+  font: inherit;
+}
+
+.seeAllButton {
+  color: var(--Blue, #003f62);
+  font: 14px Rubik, sans-serif;
+  margin-top: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.seeAllButton:hover,
+.seeAllButton:focus {
+  text-decoration: underline;
+  outline: none;
+}

@@ -1,0 +1,75 @@
+.newsletterContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: var(--texts, #232323);
+  justify-content: start;
+  font: 400 20px Source Sans 3, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.newsletterText {
+  align-self: stretch;
+  width: 100%;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.formContainer {
+  border-radius: 0;
+  display: flex;
+  margin-top: 29px;
+  width: 100%;
+  flex-direction: column;
+  font: 14px Lato, sans-serif;
+}
+
+.inputWrapper {
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 1px solid var(--texts, #232323);
+  background-color: #f0f0f0;
+  display: flex;
+  width: 100%;
+  padding-left: 14px;
+  gap: 40px 100px;
+  overflow: hidden;
+}
+
+.inputField {
+  display: flex;
+  min-height: 52px;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 6px 2px 6px 10px;
+}
+
+.divider {
+  background-color: #232323;
+  width: 1px;
+  height: 41px;
+  border: 1px solid rgba(35, 35, 35, 1);
+}
+
+.submitButton {
+  align-self: stretch;
+  min-height: 41px;
+  gap: 10px;
+  padding: 12px 10px 12px 0;
+}
+
+.privacyText {
+  margin-top: 29px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

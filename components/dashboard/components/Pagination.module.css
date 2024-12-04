@@ -1,0 +1,64 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--Dark-Gray, #232321);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  justify-content: center;
+  font: 500 14px Inter, sans-serif;
+}
+
+.pageButton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.pageButtonInner {
+  border-radius: 8px;
+  min-height: 32px;
+  width: 100%;
+  gap: 4px;
+  padding: 8px 16px;
+}
+
+.active {
+  background: var(--Dark-Gray, #232321);
+  color: var(--Pure-White, #fff);
+}
+
+.inactive {
+  border: 1px solid var(--Dark-Gray, #232321);
+}
+
+.nextButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nextIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 16px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .pagination {
+    margin-top: 40px;
+    white-space: initial;
+  }
+
+  .pageButton,
+  .pageButtonInner,
+  .nextButton {
+    white-space: initial;
+  }
+}

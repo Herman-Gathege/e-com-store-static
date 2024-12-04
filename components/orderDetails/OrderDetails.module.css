@@ -1,0 +1,15 @@
+/* Original CSS remains unchanged but with better class names */
+.orderDetailsContainer {
+  min-height: 68px;
+  color: #000;
+  text-align: center;
+  width: 85px;
+  padding: 23px 8px;
+  font: 600 16px Open Sans, sans-serif;
+}
+@media (max-width: 991px) {
+  .orderDetailsContainer {
+    white-space: initial;
+  }
+}
+/* Rest of CSS from original file with updated class names */

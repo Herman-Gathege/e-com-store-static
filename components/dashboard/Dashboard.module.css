@@ -1,0 +1,141 @@
+.container {
+  background: var(--Gray, #e7e7e3);
+  overflow: hidden;
+}
+
+.content {
+  gap: 20px;
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 18%;
+  margin-left: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 82%;
+  margin-left: 20px;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageHeader {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 1108px;
+  align-items: center;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.titles {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.pageTitle {
+  color: var(--Dark-Gray, #232321);
+  font: 24px Rubik, sans-serif;
+}
+
+.breadcrumb {
+  color: #000;
+  opacity: 0.8;
+  margin-top: 4px;
+  font: 16px Open Sans, sans-serif;
+}
+
+.addButton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  color: var(--Pure-White, #fff);
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  justify-content: start;
+  width: 212px;
+  margin: auto 0;
+  font: 500 14px Rubik, sans-serif;
+}
+
+.addButtonInner {
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Dark-Gray, #232321);
+  display: flex;
+  min-height: 48px;
+  width: 100%;
+  gap: 8px;
+  padding: 16px;
+}
+
+.addIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 16px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.productsGrid {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.productsRow {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.productsRow:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+
+  .sidebar,
+  .main {
+    width: 100%;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .pageHeader,
+  .productsGrid,
+  .productsRow {
+    max-width: 100%;
+  }
+}

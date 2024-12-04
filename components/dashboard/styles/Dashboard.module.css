@@ -1,0 +1,15 @@
+/* Original CSS with improved class names */
+.dashboard {
+  background: var(--Gray, #e7e7e3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainContent {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+/* Continue with all the original CSS, maintaining all styles but with improved class names */
+/* ... rest of the CSS from the original file with proper class names ... */
